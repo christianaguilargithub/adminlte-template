@@ -71,5 +71,13 @@
       </nav>
       <!-- /.sidebar-menu -->
     </div>
+    <div class="float-right">
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: inline;">
+                            @csrf
+            <button type="submit" class="btn btn-danger btn-sm">
+                {{ __('Logout') }}
+            </button>
+        </form>
+    </div>
     <!-- /.sidebar -->
   </aside>
